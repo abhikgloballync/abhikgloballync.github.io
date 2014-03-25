@@ -150,11 +150,11 @@ float: right;
 
 .thumbnail:hover {
     z-index: 500;
-    box-shadow: 2px 2px 2px #000;
+    box-shadow: 2px 2px 2px #D2D2D2;
     border-right: 1px solid #FFF;
     border-bottom: 1px solid #FFF;
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
 }
 
 .productinfo{
@@ -181,8 +181,41 @@ float: right;
 .pageTitle{
     letter-spacing: -2px;
     line-height: 1;
-    text-shadow: 1px 2px 0 #FFF,9px 8px 0 rgba(0,0,0,0.15);
+    text-shadow: 1px 2px 0 #FFF;
     margin: 0 0 15px;
     font-family: museo-slab,Georgia,"Times New Roman",Times,serif;
     font-size: 40px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #C1D1DE;
+    text-shadow: 0px 1px 1px #000;
+}
+
+/* bootstrap 3 helpers */
+
+.navbar-form input, .form-inline input {
+	width:auto;
+}
+
+header {
+	height:270px;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+  	margin-top:175px;
+  	width:228px;
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    top: 175px;
+    width:228px;
+  }
+}
+
+.affix,.affix-top {
+   position:static;
 }
